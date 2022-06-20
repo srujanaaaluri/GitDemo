@@ -24,6 +24,8 @@ class TestHomePage(BaseClass):
         message = homepage.getsuccessMessage().text  # text method
         print(message)
         print(message)
+        #..............
+        print("testing git")
         # //*[contains(@class, 'alert-success')] -------> xpath
         # [class*='alert-success'] ---------> CSS
         assert "success" in message  # for substring
