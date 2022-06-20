@@ -22,6 +22,8 @@ class TestHomePage(BaseClass):
         # selenium provides an pi select class -----> which provides the methods to handle the options in drop down
         homepage.getsubmitbutton().click()
         message = homepage.getsuccessMessage().text  # text method
+        print(message)
+        print(message)
         # //*[contains(@class, 'alert-success')] -------> xpath
         # [class*='alert-success'] ---------> CSS
         assert "success" in message  # for substring
